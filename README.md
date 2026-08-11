@@ -1,5 +1,7 @@
 # SauceDemo E2E Test Suite
 
+[![Playwright Tests](https://github.com/Dhruvgoyal18/saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)](https://github.com/Dhruvgoyal18/saucedemo-e2e/actions/workflows/playwright.yml)
+
 End-to-end UI tests for [saucedemo.com](https://www.saucedemo.com) covering login, inventory, cart, and checkout, built with Playwright + TypeScript using the Page Object Model.
 
 ## Tech stack
