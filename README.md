@@ -103,3 +103,15 @@ tsconfig.json
 - `retries: 1` (one automatic retry on failure, with trace capture on that retry)
 - `screenshot: 'only-on-failure'`, `video: 'retain-on-failure'`
 - Reporters: `list` (console) + `html` (written to `reports/html-report`)
+
+## Contributing
+
+`master` is protected — changes land through pull requests, not direct pushes:
+
+1. Create a branch off `master`: `git checkout -b your-branch-name`
+2. Commit your changes and push the branch: `git push -u origin your-branch-name`
+3. Open a PR: `gh pr create` (or via the GitHub UI)
+4. Wait for the `test` check (the Playwright suite, see `.github/workflows/playwright.yml`) to pass — it's a required status check and the branch must be up to date with `master`
+5. Merge (0 approvals required, so you can self-merge once CI is green)
+
+This is enforced for everyone, including repo admins — there's no direct-push bypass. Force pushes and branch deletion on `master` are also disabled.
