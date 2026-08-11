@@ -1,0 +1,17 @@
+{
+  "name": "saucedemo-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "cross-env HEADLESS=false playwright test",
+    "test:headless": "cross-env HEADLESS=true playwright test",
+    "report": "playwright show-report reports/html-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.14.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.5.4"
+  }
+}
